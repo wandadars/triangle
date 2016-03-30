@@ -1,0 +1,5 @@
+To generate a Triangle mesh use:
+
+./../../../triangle/triangle -pqCgzV vtkTestMesh.poly
+
+Then run the tri2vtk code in this directory and examine the output

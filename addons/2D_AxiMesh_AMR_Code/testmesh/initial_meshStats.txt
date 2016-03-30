@@ -1,0 +1,93 @@
+Opening largeAmrMesh_coarse.poly.
+Constructing Delaunay triangulation by divide-and-conquer method.
+  Sorting vertices.
+  Forming triangulation.
+  Removing ghost triangles.
+Delaunay milliseconds:  2
+Recovering segments in Delaunay triangulation.
+    Constructing mapping from vertices to triangles.
+  Recovering PSLG segments.
+Segment milliseconds:  0
+Removing unwanted triangles.
+  Marking holes for elimination.
+  Marking concavities (external triangles) for elimination.
+  Marking neighbors of marked triangles.
+  Deleting marked triangles.
+Hole milliseconds:  0
+Adding Steiner points to enforce quality.
+  Looking for encroached subsegments.
+  Making a list of bad triangles.
+  Splitting bad triangles.
+Quality milliseconds:  393
+
+Writing largeAmrMesh_coarse.1.node.
+Writing largeAmrMesh_coarse.1.ele.
+Writing largeAmrMesh_coarse.1.poly.
+Writing largeAmrMesh_coarse.1.off.
+
+Output milliseconds:  747
+Total running milliseconds:  1143
+
+Statistics:
+
+  Input vertices: 1005
+  Input segments: 1005
+  Input holes: 1
+
+  Mesh vertices: 99393
+  Mesh triangles: 196841
+  Mesh edges: 296233
+  Mesh exterior boundary edges: 1943
+  Mesh interior boundary edges: 0
+  Mesh subsegments (constrained edges): 1943
+
+Mesh quality statistics:
+
+  Smallest area:       7.3381e-06   |  Largest area:                4
+  Shortest edge:        0.0031416   |  Longest edge:           4.4432
+  Shortest altitude:    0.0022083   |  Largest aspect ratio:   5.4613
+
+  Triangle aspect ratio histogram:
+  1.1547 - 1.5       :     69204    |     15 - 25         :         0
+     1.5 - 2         :     85061    |     25 - 50         :         0
+       2 - 2.5       :     32922    |     50 - 100        :         0
+     2.5 - 3         :      7505    |    100 - 300        :         0
+       3 - 4         :      1981    |    300 - 1000       :         0
+       4 - 6         :       168    |   1000 - 10000      :         0
+       6 - 10        :         0    |  10000 - 100000     :         0
+      10 - 15        :         0    | 100000 -            :         0
+  (Aspect ratio is longest edge divided by shortest altitude)
+
+  Smallest angle:          20.034   |  Largest angle:          139.77
+
+  Angle histogram:
+      0 -  10 degrees:         0    |     90 - 100 degrees:     20837
+     10 -  20 degrees:         0    |    100 - 110 degrees:      9893
+     20 -  30 degrees:      4626    |    110 - 120 degrees:      1940
+     30 -  40 degrees:     57883    |    120 - 130 degrees:       244
+     40 -  50 degrees:    121487    |    130 - 140 degrees:       120
+     50 -  60 degrees:    135076    |    140 - 150 degrees:         0
+     60 -  70 degrees:    123079    |    150 - 160 degrees:         0
+     70 -  80 degrees:     70840    |    160 - 170 degrees:         0
+     80 -  90 degrees:     44498    |    170 - 180 degrees:         0
+
+Memory allocation statistics:
+
+  Maximum number of vertices: 99393
+  Maximum number of triangles: 196841
+  Maximum number of subsegments: 1943
+  Maximum number of encroached subsegments: 1
+  Maximum number of bad triangles: 510217
+  Maximum number of stacked triangle flips: 4
+  Approximate heap memory use (bytes): 41983528
+
+Algorithmic statistics:
+
+  Number of incircle tests: 3455903
+  Number of 2D orientation tests: 699315
+  Number of triangle circumcenter computations: 145660
+
+  Checking consistency of mesh...
+  In my studied opinion, the mesh appears to be consistent.
+  Checking Delaunay property of mesh...
+  By virtue of my perceptive intelligence, I declare the mesh Delaunay.

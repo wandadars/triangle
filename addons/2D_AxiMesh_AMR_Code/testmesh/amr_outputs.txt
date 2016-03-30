@@ -1,0 +1,105 @@
+
+
+----------WELCOME TO TRIANGLE ADAPTIVE MESH REFINEMENT PROGRAM----------
+
+The Code reads in data from a 2D triangle mesh and produces a specific adaptive mesh
+Run this code in the directory where the Triangle mesh files are located.
+----------STARTING TRIANGLE MESH READER----------
+
+The Code reads triangle meshes created by the program Triangle. 
+
+What is file casename?  i.e. <casename>.node:Selected casename is: largeAmrMesh_coarse.1 
+Reading File: largeAmrMesh_coarse.1.node 
+
+Node File Data
+# of Nodes: 99393 
+# of Dimensions: 2
+Attribute Flag: 0 
+Marker Flag: 1 
+
+Reading File: largeAmrMesh_coarse.1.ele 
+
+Element File Data
+# of Elements: 196841
+# of Verts Per Element:  3
+# of Attributes: 0 
+
+Finished Reading Triangle Mesh .node and .ele Data Files
+
+
+Reading Data from input files: amr_inputs.dat
+Reading X,Y coordinates of circle Center and the AMR Flag
+
+Quadratic Element Scaling with Uniform Mesh inside Refinement Radius Selected
+
+Reading:
+ Refinement Radius
+ Area Percent Threshold
+ Minimum Area Factor(0 to 1)
+
+User Input Is:
+X-Center Coord:  0.000000
+Y-Center Coord:  0.000000
+Element Scaling Flag:  5
+Refinement Radius:  10.000000
+Percent Area Inside Refinement Radius:  60.000000
+Maximum Area Constraint Inside Refinement Radius:  0.001000
+
+
+Computing Triangle area constraints for .area file...
+Data will be written to: "largeAmrMesh_coarse.1.area" 
+Allocation of Arrays Complete
+
+Mininum Area:  1.00E-03 
+Critical Area:  1.00E-03 
+Maximum Area:  4.00E+00 
+Minimum Radius:  1.001557 
+Maximum Radius:  705.468479
+
+
+Solving the following Equations to Scale Element Areas
+OUTER SOLUTION
+2*C1*rmax + C2 = 0
+C1*rmax^2 + C2*rmax + C3 = Amax
+C1*R0^2 + C2*R0 + C3 = A0
+
+INNER SOLUTION
+A=Amin (constant)
+Numerical Coeffients for system of equations are the following:
+
+Coefficients for OUTER SOLUTION...
+[1.41E+03]C1 + [1.00E+00]C2 + [0.00E+00]C3 = [0.00E+00]
+[4.98E+05]C1 + [7.05E+02]C2 + [1.00E+00]C3 = [4.00E+00]
+[1.00E+02]C1 + [1.00E+01]C2 + [1.00E+00]C3 = [1.00E-03]
+
+Numerical Coeffients for system of equations are the following:
+
+Coefficients for INNER SOLUTION...
+[2.00E+00]C4 + [1.00E+00]C5 + [0.00E+00]C6 = [0.00E+00]
+[1.00E+00]C4 + [1.00E+00]C5 + [1.00E+00]C6 = [1.00E-03]
+[1.00E+02]C4 + [1.00E+01]C5 + [1.00E+00]C6 = [1.00E-03]
+
+Coefficients to the OUTER quadratic area sizing function 
+A(r) = C1r^2 +C2r+C3 
+C1 =  -8.268E-06 
+C2 =   1.167E-02 
+C3 =  -1.148E-01
+
+Coefficients to the INNER quadratic area sizing function 
+A(r) = C4r^2 +C5r+C6 
+C4 =   0.000E+00 
+C5 =   0.000E+00 
+C6 =   1.000E-03
+
+Predicted Areas Using Sizing Function(Check to see if it matches input)
+OUTER area sizing function predictions
+Max Area:  4.00E+00
+Critical Area:  1.00E-03
+
+
+INNER area sizing function predictions
+Min Area:  1.00E-03
+Critical Area:  1.00E-03
+
+Updating Element Areas...Printing to File Now
+Writing Adaptive Meshed Triangle .area file done.

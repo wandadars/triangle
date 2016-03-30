@@ -1,0 +1,7 @@
+to generate the initial Triangle mesh use:
+
+./../../triangle/triangle -pq0.9/0a0.000001geVCY Mesh1.poly
+
+
+
+The MacroVoid files are StarCD formatted grid files for an mesh that is internal to a circle. The purpose of this test was to see if the code could stitch the two meshes together.

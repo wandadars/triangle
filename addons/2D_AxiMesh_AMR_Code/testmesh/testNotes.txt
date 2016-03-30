@@ -1,0 +1,35 @@
+
+Make sure the amr_inputs.dat file is in the directory and has the correct information in it.
+
+1.) Generate the initial triangulation using:
+	triangle -pqa4CgV largeAmrMesh_coarse.poly
+
+2.)Rrun the code to generate a .area file containing element scaling information.
+
+3.)Run the triangulation again using the element scaling data on the initial triangulation.
+
+triangle -p28qraeCgV largeAmrMesh_coarse.1.poly
+
+*Note - you can re-run the second and third steps repeatedly by incrementing
+
+
+Example
+
+2D_AxiMesh_AMR_Code <-largeAmrMesh_coarse.2.poly
+
+triangle -p28qraeCgV largeAmrMesh_coarse.2.poly
+
+
+2D_AxiMesh_AMR_Code <-largeAmrMesh_coarse.3.poly
+
+triangle -p28qraeCgV largeAmrMesh_coarse.3.poly
+
+
+
+This iterative proceedure can refine the results of the mesh refinement.
+
+
+4.) When you are happy with the results, make a directory (final_mesh for example) and move the final iteration of the Triangle mesh into it and reanme the files such that the suffix is a .1.ele, etc.
+	Example: Move largeAmrMesh_coarse.3.* into the final_mesh directory and rename all files to largeAmrMesh_coarse.1*
+
+5.) Run the conflu Rocflu utility to generate the hybrid ascii file if you want to generate a grid for input to Rocflu.
